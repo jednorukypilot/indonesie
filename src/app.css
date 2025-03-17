@@ -1,3 +1,34 @@
 @import 'tailwindcss';
+@plugin "daisyui" {
+}
+
+@plugin "daisyui/theme" {
+	name: 'light';
+	default: true;
+	prefersdark: false;
+	color-scheme: 'light';
+	--color-base-100: oklch(98.05% 0.0066 160.08);
+	--color-base-200: oklch(97.55% 0.0045 258.32);
+	--color-primary: oklch(42.58% 0.0939 161.62);
+	--color-secondary: oklch(37% 0.146 265.522);
+	--color-accent: oklch(71% 0.202 349.761);
+	--color-neutral: oklch(79.21% 0 0);
+	--color-neutral-content: oklch(32.11% 0 0);
+	--radius-selector: 0.25rem;
+	--radius-field: 999rem;
+	--radius-box: 0.25rem;
+	--size-selector: 0.3125rem;
+	--size-field: 0.3125rem;
+	--border: 0px;
+	--depth: 0;
+	--noise: 0;
+}
 
 @plugin '@tailwindcss/typography';
+
+@layer base {
+	html {
+		font-family: 'Figtree', sans-serif;
+		height: 100%;
+	}
+}

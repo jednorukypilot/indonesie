@@ -1,56 +1,38 @@
-<div class="flex min-h-screen w-full flex-col">
-	<h1 class="text-center text-4xl font-bold">Veterina Radotín</h1>
-	<div class="grid grow grid-cols-2 content-center gap-24 p-16">
-		<div class="flex h-128 items-center justify-center">
-			<div
-				id="bg-tile-kone"
-				class="flex h-128 w-full max-w-175 items-center justify-center rounded-md px-10"
-			>
-				<h2 class="text-center text-5xl font-medium text-white">Koně</h2>
-			</div>
-		</div>
-		<div class=" flex h-128 items-center justify-center">
-			<div
-				id="bg-tile-ordinace"
-				class="flex h-128 w-full max-w-175 items-center justify-center rounded-md px-10"
-			>
-				<h2 class="font-figtree text-center text-5xl font-medium text-white">
-					Ordinace malých zvířat
-				</h2>
-			</div>
-		</div>
+<script lang="ts">
+	import SectionTile from '$lib/components/SectionTile.svelte';
+	import type { Section } from '$lib/types';
+	//pages be list of type section
+	let pages: Section[] = [
+		{
+			name: 'KONĚ',
+			name_short: 'KONĚ',
+			bg: 'kone_bg.png',
+			color: '#005e3e',
+			url: 'kone',
+			styleId: 'bg-tile-kone',
+			note: 'Terénní lékařství koní'
+		},
+		{
+			name: 'ORDINACE MALÝCH ZVÍŘAT',
+			name_short: 'ORDINACE',
+			bg: 'ordinace_bg.png',
+			color: '#003e5e',
+			url: 'ordinace',
+			styleId: 'bg-tile-ordinace',
+			note: 'Náměstí Osvoboditelů 69/5a, 15300 Praha Radotín'
+		}
+	];
+</script>
+
+<div class="bg-base-100 flex min-h-screen w-full flex-col">
+	<div class="m-4 flex flex-row items-center gap-4">
+		<img src="veterina_logo_green.svg" alt="veterina logo" class="h-16" />
+		<h1 class="text-primary text-center text-4xl font-bold">VETERINA RADOTÍN</h1>
+	</div>
+
+	<div class="flex grow flex-col items-center justify-center gap-24 px-16 lg:flex-row">
+		{#each pages as page}
+			<SectionTile {page} />
+		{/each}
 	</div>
 </div>
-
-<style>
-	#bg-tile-kone {
-		height: 100%;
-		background:
-			linear-gradient(
-				to bottom,
-				#005e3e,
-				rgba(0, 94, 62, 0.9),
-				rgba(0, 94, 62, 0.9),
-				rgba(0, 94, 62, 1)
-			),
-			url('kone_bg.png');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-	#bg-tile-ordinace {
-		height: 100%;
-		background:
-			linear-gradient(
-				to bottom,
-				#003e5e,
-				rgba(0, 62, 94, 0.85),
-				rgba(0, 62, 94, 0.85),
-				rgba(0, 62, 94, 1)
-			),
-			url('ordinace_bg.png');
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-</style>
