@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Footer from '$lib/components/Footer.svelte';
 	import SectionTile from '$lib/components/SectionTile.svelte';
 	import type { Section } from '$lib/types';
 	
@@ -33,4 +34,5 @@
 			<SectionTile {page} />
 		{/each}
 	</div>
+	<Footer/>
 </div>
