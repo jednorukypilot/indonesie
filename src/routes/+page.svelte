@@ -1,24 +1,22 @@
 <script lang="ts">
 	import SectionTile from '$lib/components/SectionTile.svelte';
 	import type { Section } from '$lib/types';
-	//pages be list of type section
+	
 	let pages: Section[] = [
 		{
 			name: 'KONĚ',
 			name_short: 'KONĚ',
-			bg: 'kone_bg.png',
 			color: '#005e3e',
 			url: 'kone',
-			styleId: 'bg-tile-kone',
+			styleId: 'bg-tile-horses',
 			note: 'Terénní lékařství koní'
 		},
 		{
 			name: 'ORDINACE MALÝCH ZVÍŘAT',
 			name_short: 'ORDINACE',
-			bg: 'ordinace_bg.png',
 			color: '#003e5e',
 			url: 'ordinace',
-			styleId: 'bg-tile-ordinace',
+			styleId: 'bg-tile-clinic',
 			note: 'Náměstí Osvoboditelů 69/5a, 15300 Praha Radotín'
 		}
 	];

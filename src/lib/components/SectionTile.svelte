@@ -24,7 +24,7 @@
 </div>
 
 <style>
-	#bg-tile-kone {
+	#bg-tile-horses {
 		height: 100%;
 		background:
 			linear-gradient(
@@ -39,7 +39,7 @@
 		background-repeat: no-repeat;
 		background-position: center;
 	}
-	#bg-tile-ordinace {
+	#bg-tile-clinic {
 		height: 100%;
 		background:
 			linear-gradient(
