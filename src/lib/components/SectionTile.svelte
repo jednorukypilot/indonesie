@@ -8,7 +8,7 @@
 	<a
 		id={page.styleId}
 		href={page.url}
-		class="justify-space-between flex w-full max-w-175 flex-col items-center gap-4 px-10 rounded-md"
+		class="justify-space-between flex w-full max-w-175 flex-col items-center gap-4 rounded-md px-10"
 	>
 		<div class="flex grow flex-col items-center justify-center gap-4">
 			<h2 class="hidden text-center text-5xl md:inline">{page.name}</h2>
@@ -16,7 +16,7 @@
 			<p class="text-neutral hidden text-center text-xl md:inline">{page.note}</p>
 		</div>
 		<div
-			class="bg-accent hover:bg-accent-hover mb-12 rounded-full p-2 px-6 py-3 text-center text-lg lg:mb-16"
+			class="bg-accent mb-12 rounded-full p-2 px-6 py-3 text-center text-lg hover:brightness-90 lg:mb-16"
 		>
 			VSTOUPIT
 		</div>
