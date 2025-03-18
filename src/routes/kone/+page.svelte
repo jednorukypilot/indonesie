@@ -1,52 +1,43 @@
 <script lang="ts">
-	import type { Device } from '$lib/types';
-
-	let devices: Device[] = [
-		{
-			name: 'RTG',
-			url: 'favicon.png',
-			note: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.'
-		},
-		{
-			name: 'Ultrazvuk',
-			url: 'favicon.png',
-			note: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.'
-		},
-		{
-			name: 'Bruska na zuby',
-			url: 'favicon.png',
-			note: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.'
-		},
-		{
-			name: 'Endoskop',
-			url: 'favicon.png',
-			note: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.'
-		}
-	];
+	import DoctorTile from '$lib/components/DoctorTile.svelte';
+	import InfoTile from '$lib/components/InfoTile.svelte';
+	import Tabs from '$lib/components/Tabs.svelte';
+	import { doctors, servicePoints, servicesNote, sectionTitle } from './data';
 </script>
 
-<a class="bg-primary flex flex-row items-center gap-4 p-4" href="/">
-	<img src="veterina_logo.svg" alt="veterina logo" class="h-16" />
-	<h1 class="text-primary invisible text-center text-4xl font-medium">
-		Terénní veterinární medicína koní
-	</h1>
-</a>
-<div class="bg-primary flex grow flex-col items-center gap-24 px-16">
-	<div class="my-4 w-[75rem] bg-white p-8">
-		<h2 class="text-start text-2xl">
-			Poskytujeme preventivní i akutní péči o koně. Vyjíždíme zejména v Praze a Středočeském kraji.
-		</h2>
-		<div class="bloc mt-8 flex w-full flex-wrap items-center justify-center gap-x-24 gap-y-8">
-			{#each devices as device}
-				<div class="flex flex-col items-center gap-4">
-					<img src={device.url} alt={device.name} class="h-64 border-2" />
-					<h3 class="text-center text-2xl font-bold">{device.name}</h3>
-					<p class="max-w-80 text-center">{device.note}</p>
-				</div>
-			{/each}
-		</div>
+<div class="bg-primary flex grow flex-col">
+	<div class="flex flex-row items-center gap-4 p-4">
+		<a href="/">
+			<img src="veterina_logo.svg" alt="veterina logo" class="h-16" />
+		</a>
+		<h1 class="text-primary invisible text-center text-4xl font-medium">
+			{sectionTitle}
+		</h1>
 	</div>
-	<div class="w-[75rem] bg-white p-4">
-		<h2 class="text-start text-3xl font-bold">Lékaři</h2>
+	<div class="mx-auto mb-12 grid w-full max-w-[75rem] grid-cols-3 gap-4 px-8">
+		<div class="col-span-2 col-start-1">
+			<InfoTile title="Služby">
+				<div class="flex h-98 flex-col">
+					<p class="pt-4 text-lg">{servicesNote}</p>
+					<div class="mb-4 flex grow flex-col justify-center">
+						<ul class="list-disc py-2 pl-8">
+							{#each servicePoints as point}
+								<li class="text-lg">{point}</li>
+							{/each}
+						</ul>
+					</div>
+				</div>
+			</InfoTile>
+		</div>
+		<div class="col-span-1">
+			<Tabs />
+		</div>
+		{#each doctors as doctor, i}
+			<div class={`col-span-2  ${(i + 1) % 2 ? 'col-start-1' : 'col-start-2'}`}>
+				<InfoTile title={doctor.name}>
+					<DoctorTile {doctor} />
+				</InfoTile>
+			</div>
+		{/each}
 	</div>
 </div>
