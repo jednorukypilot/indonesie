@@ -23,7 +23,7 @@
 	];
 </script>
 
-<div class="bg-base-100 flex min-h-screen w-full flex-col">
+<div class="bg-base-100 grow flex w-full flex-col">
 	<div class="m-4 flex flex-row items-center gap-4">
 		<img src="veterina_logo_green.svg" alt="veterina logo" class="h-16" />
 		<h1 class="text-primary text-center text-4xl font-bold">VETERINA RADOTÍN</h1>
@@ -34,5 +34,4 @@
 			<SectionTile {page} />
 		{/each}
 	</div>
-	<Footer/>
 </div>

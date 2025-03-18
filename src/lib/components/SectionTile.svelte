@@ -8,7 +8,7 @@
 	<a
 		id={page.styleId}
 		href={page.url}
-		class="justify-space-between flex w-full max-w-175 flex-col items-center gap-4 px-10"
+		class="justify-space-between flex w-full max-w-175 flex-col items-center gap-4 px-10 rounded-md"
 	>
 		<div class="flex grow flex-col items-center justify-center gap-4">
 			<h2 class="hidden text-center text-5xl md:inline">{page.name}</h2>

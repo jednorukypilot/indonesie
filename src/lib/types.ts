@@ -6,3 +6,9 @@ export type Section = {
     url: string;
     note: string;
 };
+
+export type Device = {
+    name: string;
+    url: string;
+    note: string;
+};
