@@ -5,10 +5,10 @@
 	import { doctors, servicePoints, servicesNote, sectionTitle } from './data';
 </script>
 
-<div class="bg-primary flex grow flex-col">
+<div class="flex grow flex-col bg-[#effcf3]">
 	<div class="flex flex-row items-center gap-4 p-4">
 		<a href="/">
-			<img src="veterina_logo.svg" alt="veterina logo" class="h-16" />
+			<img src="veterina_logo_green.svg" alt="veterina logo" class="h-16" />
 		</a>
 		<h1 class="text-primary invisible text-center text-4xl font-medium">
 			{sectionTitle}
