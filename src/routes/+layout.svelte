@@ -1,12 +1,11 @@
 <script lang="ts">
-	import Footer from '$lib/components/Footer.svelte';
+	import TopBar from '$lib/components/TopBar.svelte';
 	import '../app.css';
 
 	let { children } = $props();
 </script>
 
-<div class="flex flex-col min-h-screen">
+<div class="flex min-h-screen flex-col">
+	<TopBar />
 	{@render children()}
-	
-	<Footer/>
 </div>
