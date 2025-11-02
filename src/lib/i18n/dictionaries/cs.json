@@ -5,6 +5,16 @@
 		"contact": "Kontakt",
 		"write": "Napište nám"
 	},
+	"footer": {
+		"navigation": "Navigace",
+		"offers": "Nabídka pozemků",
+		"faq": "FAQ",
+		"important_links": "Důležité odkazy",
+		"contact": "Kontakt",
+		"phone": "+420 725 558 669",
+		"mail": "info@realityindonesie.cz",
+		"name": "Reality Indonésie"
+	},
 	"home": {
 		"hero": {
 			"headline": "Investujte do pozemků v ",
@@ -27,8 +37,8 @@
 			"text": "Jsme tu pro vás od prvního dotazu až po koupi pozemku. Kontaktujte nás a udělejte první krok k vaší investici v Indonésii",
 			"button_label": "Kontaktujte nás"
 		},
-		"qna":{
-			"title":"Čato se nás ptáte"
+		"qna": {
+			"title": "Čato se nás ptáte"
 		}
 	}
 }
