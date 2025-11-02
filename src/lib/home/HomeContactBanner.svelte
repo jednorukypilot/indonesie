@@ -20,7 +20,7 @@
 		<h2 class="font-serif text-3xl font-bold text-white md:text-5xl">
 			{$t('home.contact_banner.title')}
 		</h2>
-		<p class="mb-6 text-lg text-white md:text-xl">
+		<p class="mb-6 max-w-3xl text-lg text-white md:text-xl">
 			{$t('home.contact_banner.text')}
 		</p>
 		<Button

@@ -16,3 +16,8 @@ export type ArticleData = {
 	imageSrc: string[];
 	imageAlt: string;
 };
+
+export type QnAData = {
+	title: string;
+	paragraphs: string[];
+};
