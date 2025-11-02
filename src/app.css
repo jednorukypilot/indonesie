@@ -14,16 +14,16 @@
 	default: true;
 	prefersdark: false;
 	color-scheme: 'light';
-	--color-base-100: oklch(100% 0 0);
-	--color-base-200: oklch(1 0.007 61.4);
-	--color-primary: oklch(0.64 0.175 146.7);
-	--color-secondary: oklch(0.849 0.151 81.3);
-	--color-accent: oklch(0.554 0.107 79);
-	--color-neutral: oklch(0.558 0.016 244.9);
-	--color-neutral-content: oklch(0.262 0.009 248.2);
-	--color-info: oklch(0.967 0.053 151.9);
-	--color-success: oklch(0.545 0.148 146.8);
-	--color-warning: oklch(0.554 0.107 79);
+	--color-base-100: oklch(100% 0 0); /* #ffffff */
+	--color-base-200: oklch(1 0.007 61.4); /* #ffffff */
+	--color-primary: oklch(0.64 0.175 146.7); /* #28a745 */
+	--color-secondary: oklch(0.849 0.151 81.3); /* #ffc247 */
+	--color-accent: oklch(0.554 0.107 79);  /* #946a17 */
+	--color-neutral: oklch(0.558 0.016 244.9); /* #6c757d */
+	--color-neutral-content: oklch(0.262 0.009 248.2); /* #212529 */
+	--color-info: oklch(0.967 0.053 151.9); /* #dbffe3 */
+	--color-success: oklch(0.545 0.148 146.8); /* #1f8637 */
+	--color-warning: oklch(0.554 0.107 79); /* #946a17 */
 	--radius-selector: 0rem;
 	--radius-field: 0rem;
 	--radius-box: 0rem;
