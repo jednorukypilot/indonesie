@@ -13,6 +13,6 @@ export type ArticleData = {
 	title: string;
 	highlights: string[];
 	paragraphs: string[];
-	imageSrc: string;
+	imageSrc: string[];
 	imageAlt: string;
 };

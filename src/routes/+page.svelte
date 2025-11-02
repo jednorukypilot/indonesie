@@ -41,7 +41,7 @@
 			{/each}
 		</div>
 	</GradientBackground>
-	{#each articles as article}
-		<HomeArticle {article} />
+	{#each articles as article, index}
+		<HomeArticle {article} reverse={index % 2 === 1} />
 	{/each}
 </div>

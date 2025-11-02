@@ -1,22 +1,28 @@
 [
-  {
-    "title": "Proč investovat do pozemků v indonésii?",
-    "highlights": ["indonésii"],
-    "paragraphs": [
-      "Probudíte se uprostřed té nejčistší přírody Indonésie. Místní káva patří k nejvyhlášenějším na světě. Čerstvé ovoce si utrhnete přímo ze stromů vedle vily a jediní, koho tím můžete vyrušit, jsou místní opice nebo barevní papoušci.",
-      "Ve městě najdete vše, co potřebujete. Obyvatelé vás vždy přivítají s úsměvem – Indonésie je známá svou pohostinností a klidným životním stylem. Díky čistému prostředí a bezpečí je vyhledávanou destinací pro život i investice. Často se jí říká ráj jihovýchodní Asie."
-    ],
-    "imageSrc": "images/pages/homepage/slider-th-1.jpg",
-    "imageAlt": "Tropical villa by a pool"
-  },
-  {
-    "title": "Váš kousek ráje, který roste na hodnotě",
-    "highlights": ["Váš","kousek","ráje"],
-    "paragraphs": [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis gravida nulla. Integer tempor. Morbi scelerisque luctus velit. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu, maecenas ipsum velit.",
-      "Sorbi scelerisque luctus velit. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu, maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui."
-    ],
-    "imageSrc": "images/pages/homepage/slider-th-1-1.jpg",
-    "imageAlt": "Lagoon and forest"
-  }
+	{
+		"title": "Proč investovat do pozemků v indonésii?",
+		"highlights": ["indonésii"],
+		"paragraphs": [
+			"Probudíte se uprostřed té nejčistší přírody Indonésie. Místní káva patří k nejvyhlášenějším na světě. Čerstvé ovoce si utrhnete přímo ze stromů vedle vily a jediní, koho tím můžete vyrušit, jsou místní opice nebo barevní papoušci.",
+			"Ve městě najdete vše, co potřebujete. Obyvatelé vás vždy přivítají s úsměvem – Indonésie je známá svou pohostinností a klidným životním stylem. Díky čistému prostředí a bezpečí je vyhledávanou destinací pro život i investice. Často se jí říká ráj jihovýchodní Asie."
+		],
+		"imageSrc": [
+			"images/pages/homepage/slider-th-1.jpg",
+			"images/pages/homepage/slider-th-1@2x.jpg"
+		],
+		"imageAlt": "Tropical villa by a pool"
+	},
+	{
+		"title": "Váš kousek ráje, který roste na hodnotě",
+		"highlights": ["Váš", "kousek", "ráje"],
+		"paragraphs": [
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis gravida nulla. Integer tempor. Morbi scelerisque luctus velit. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu, maecenas ipsum velit.",
+			"Sorbi scelerisque luctus velit. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu, maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui."
+		],
+		"imageSrc": [
+			"images/pages/homepage/slider-th-1-1.jpg",
+			"images/pages/homepage/slider-th-1@2x-1.jpg"
+		],
+		"imageAlt": "Lagoon and forest"
+	}
 ]
