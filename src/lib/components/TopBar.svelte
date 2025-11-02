@@ -20,7 +20,7 @@
 </script>
 
 <div class="flex flex-col">
-	<div class="bg-primary flex min-h-[56px] flex-row items-center justify-center p-4">
+	<div class="bg-primary flex min-h-14 flex-row items-center justify-center p-4">
 		<span class="text-center text-gray-100">
 			Potřebujete poradit? Pomůžeme vám vybrat ten správný pozemek.
 			<a href="tel:+420123456789" class="ml-2 underline"> +420 123 456 789 </a>
