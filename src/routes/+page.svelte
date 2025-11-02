@@ -4,21 +4,37 @@
 	import HomeHero from '$lib/home/HomeHero.svelte';
 	import HomePoint from '$lib/home/HomePoint.svelte';
 	import type { ArticleData, HomePointData } from '$lib/types';
+	import { t } from 'svelte-i18n';
 
-	let homePoints: HomePointData[] = [];
 	let articles: ArticleData[] = [];
-		
+	$: homePoints = [
+		{
+			title: $t('home.points.why_title'),
+			description: $t('home.points.why_text'),
+			icon: 'images/icons/chart-line-up-regular-full.svg'
+		},
+		{
+			title: $t('home.points.plan_title'),
+			description: $t('home.points.plan_text'),
+			icon: 'images/icons/clipboard-check-regular-full.svg'
+		},
+		{
+			title: $t('home.points.experience_title'),
+			description: $t('home.points.experience_text'),
+			icon: 'images/icons/umbrella-beach-regular-full.svg'
+		}
+	];
+
 	export let data: { homePoints: HomePointData[]; articles: ArticleData[] };
 
-	({ homePoints, articles } = data);
-
+	({ articles } = data);
 </script>
 
 <div class="bg-base-100 flex w-full grow flex-col">
 	<HomeHero />
 	<GradientBackground>
 		<div
-			class="my-20 flex w-full md:flex-row items-center justify-center px-4 flex-col md:px-8 lg:px-16 xl:px-32 2xl:px-48"
+			class="my-20 flex w-full flex-col items-center justify-center px-4 md:flex-row md:px-8 lg:px-16 xl:px-32 2xl:px-48"
 		>
 			{#each homePoints as data}
 				<HomePoint {data} />
