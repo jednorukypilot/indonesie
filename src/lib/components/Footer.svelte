@@ -21,11 +21,11 @@
 			<h3 class="text-primary mb-4 font-serif text-xl font-bold">{$t('footer.contact')}</h3>
 			<div class="flex flex-row items-center justify-center p-2">
 				<FontAwesomeIcon icon={faPhone} class="h-6 text-white" />
-				<a href="tel:+420123456789" class="ml-2 underline"> {$t('footer.phone')} </a>
+				<a href="tel:+420123456789" class="ml-2 underline"> {$t('phone')} </a>
 			</div>
 			<div class="flex flex-row items-center justify-center p-2">
 				<FontAwesomeIcon icon={faEnvelope} class="h-6 text-white" />
-				<a href="mailto:info@realityindonesie.cz" class="ml-2 underline"> {$t('footer.mail')} </a>
+				<a href="mailto:info@realityindonesie.cz" class="ml-2 underline"> {$t('mail')} </a>
 			</div>
 		</div>
 	</div>

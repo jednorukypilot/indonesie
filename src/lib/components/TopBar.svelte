@@ -2,6 +2,7 @@
 	import type { MenuTile } from '../types';
 	import { faPhone } from '@fortawesome/free-solid-svg-icons';
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
+	import { t } from 'svelte-i18n';
 
 	let menuTiles: MenuTile[] = [
 		{
@@ -22,8 +23,8 @@
 <div class="flex flex-col">
 	<div class="bg-primary flex min-h-14 flex-row items-center justify-center p-4">
 		<span class="text-center text-gray-100">
-			Potřebujete poradit? Pomůžeme vám vybrat ten správný pozemek.
-			<a href="tel:+420123456789" class="ml-2 underline"> +420 123 456 789 </a>
+			{$t('header.need_help')}
+			<a href="tel:+420123456789" class="ml-2 underline"> {$t('phone')}</a>
 		</span>
 	</div>
 	<div
@@ -37,7 +38,7 @@
 		</nav>
 		<div class="flex flex-row items-center justify-center p-2">
 			<FontAwesomeIcon icon={faPhone} class="text-secondary h-6" />
-			<a href="tel:+420123456789" class="ml-2 underline"> +420 123 456 789 </a>
+			<a href="tel:+420123456789" class="ml-2 underline"> {$t('phone')} </a>
 		</div>
 	</div>
 </div>

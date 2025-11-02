@@ -1,9 +1,14 @@
 {
+	"phone": "+420 725 558 669",
+	"mail": "info@realityindonesie.cz",
 	"nav": {
 		"about": "O nás",
 		"catalog": "Katalog pozemků",
 		"contact": "Kontakt",
 		"write": "Napište nám"
+	},
+	"header": {
+		"need_help": "Potřebujete poradit? Pomůžeme vám vybrat ten správný pozemek."
 	},
 	"footer": {
 		"navigation": "Navigace",
@@ -11,8 +16,6 @@
 		"faq": "FAQ",
 		"important_links": "Důležité odkazy",
 		"contact": "Kontakt",
-		"phone": "+420 725 558 669",
-		"mail": "info@realityindonesie.cz",
 		"name": "Reality Indonésie"
 	},
 	"home": {
