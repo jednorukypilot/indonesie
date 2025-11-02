@@ -1,8 +1,10 @@
 <script lang="ts">
 	import GradientBackground from '$lib/components/GradientBackground.svelte';
 	import HomeArticle from '$lib/home/HomeArticle.svelte';
+	import HomeContactBanner from '$lib/home/HomeContactBanner.svelte';
 	import HomeHero from '$lib/home/HomeHero.svelte';
 	import HomePoint from '$lib/home/HomePoint.svelte';
+	import HomeQnA from '$lib/home/HomeQnA.svelte';
 	import type { ArticleData, HomePointData } from '$lib/types';
 	import { t } from 'svelte-i18n';
 
@@ -44,4 +46,6 @@
 	{#each articles as article, index}
 		<HomeArticle {article} reverse={index % 2 === 1} />
 	{/each}
+	<HomeContactBanner />
+	<HomeQnA />
 </div>

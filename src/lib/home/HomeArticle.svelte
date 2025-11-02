@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Button from '$lib/components/Button.svelte';
+	import { ButtonStyle } from '$lib/enums';
 	import type { ArticleData } from '$lib/types';
 	import { t } from 'svelte-i18n';
 
@@ -64,15 +66,8 @@
 				<p class="mb-4 text-gray-700">{paragraph}</p>
 			{/each}
 			<div class="mt-5 flex w-full flex-row items-center justify-center gap-5 md:justify-start">
-				<a href="#" class="bg-secondary px-6 py-3 font-semibold text-gray-900 hover:bg-[#cc9b38]">
-					{$t('nav.catalog')}
-				</a>
-				<a
-					href="#"
-					class="border-secondary text-accent border-2 bg-transparent px-6 py-3 font-semibold hover:bg-[#ffdda0]"
-				>
-					{$t('nav.write')}
-				</a>
+				<Button label={$t('nav.catalog')} href="#" buttonStyle={ButtonStyle.PRIMARY} />
+				<Button label={$t('nav.write')} href="#" buttonStyle={ButtonStyle.SECONDARY} />
 			</div>
 		</div>
 	</div>

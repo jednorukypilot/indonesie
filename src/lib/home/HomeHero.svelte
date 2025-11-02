@@ -1,5 +1,7 @@
 <script>
+	import Button from '$lib/components/Button.svelte';
 	import Hero from '$lib/components/Hero.svelte';
+	import { ButtonStyle } from '$lib/enums';
 	import { t } from 'svelte-i18n';
 </script>
 
@@ -31,12 +33,8 @@
 				</p>
 
 				<div class="flex flex-col items-center justify-center gap-12 sm:flex-row">
-					<a href="#" class="bg-primary px-6 py-3 font-semibold text-gray-100 hover:bg-[#1b742f]">
-						{$t('home.hero.more')}
-					</a>
-					<a href="#" class="bg-secondary px-6 py-3 font-semibold text-gray-900 hover:bg-[#cc9b38]">
-						{$t('home.hero.contact')}
-					</a>
+					<Button label={$t('home.hero.more')} href="#" buttonStyle={ButtonStyle.GREEN} />
+					<Button label={$t('home.hero.contact')} href="#" buttonStyle={ButtonStyle.PRIMARY} />
 				</div>
 			</div>
 		</div>

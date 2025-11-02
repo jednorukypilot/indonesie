@@ -21,6 +21,11 @@
 			"plan_text": "Od prvního kontaktu po správu pronájmu – zajistíme kompletní servis. Vy si jen užíváte dovolenou a plynoucí pasivní příjem.",
 			"experience_title": "Život v ráji a bezpečí",
 			"experience_text": "Indonésie je známá svou přírodou, pohostinností a stabilním prostředím, srovnatelným s nejoblíbenějšími světovými destinacemi."
+		},
+		"contact_banner": {
+			"title": "Spojte se s námi",
+			"text": "Jsme tu pro vás od prvního dotazu až po koupi pozemku. Kontaktujte nás a udělejte první krok k vaší investici v Indonésii",
+			"button_label": "Kontaktujte nás"
 		}
 	}
 }
