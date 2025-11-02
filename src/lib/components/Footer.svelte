@@ -4,7 +4,7 @@
 	import { t } from 'svelte-i18n';
 </script>
 
-<footer class="flex-flex-col items-center justify-center bg-gray-900 py-6 pt-16 pb-10">
+<footer class="flex-flex-col items-center justify-center bg-gray-900 px-6 pt-16 pb-10">
 	<div
 		class="flex flex-col items-start justify-evenly gap-12 text-center text-sm text-white md:flex-row"
 	>
