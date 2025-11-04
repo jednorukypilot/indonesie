@@ -3,6 +3,7 @@
 	import { t } from 'svelte-i18n';
 	import CatalogPoint from './CatalogPoint.svelte';
 	import { CatalogPointType } from '$lib/enums';
+	import { goto } from '$app/navigation';
 
 	export let data: CatalogData;
 	export let reverse: boolean = false;
@@ -13,6 +14,7 @@
 
 	function handleListingClick() {
 		console.log(`Listing clicked: ${data.id}`);
+		goto(`/catalog/${data.id}`);
 	}
 </script>
 

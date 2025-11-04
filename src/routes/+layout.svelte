@@ -1,5 +1,6 @@
 <script lang="ts">
 	import TopBar from '$lib/components/TopBar.svelte';
+	import Sidebar from '$lib/components/Sidebar.svelte';
 	import '../app.css';
 	import '$lib/i18n';
 
@@ -24,6 +25,7 @@
 
 <div class="flex min-h-screen flex-col">
 	<TopBar />
+	<Sidebar />
 	{@render children()}
 	<Footer />
 </div>

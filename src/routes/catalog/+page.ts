@@ -14,7 +14,7 @@ export const load = async ({ parent }) => {
 
 	const rawCatalog = articleFiles[pathFor(lang)] ?? articleFiles[pathFor(DEFAULT_LANG)];
 
-	const catalog: CatalogData[] = rawCatalog.map((raw) => createCatalogData(raw));
+	const catalog: CatalogData[] = rawCatalog.map(createCatalogData);
 
 	return { catalog };
 };
