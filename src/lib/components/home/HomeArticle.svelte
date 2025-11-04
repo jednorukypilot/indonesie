@@ -47,7 +47,7 @@
 </script>
 
 <div
-	class="flex w-full flex-col-reverse items-center justify-center px-8 py-12 md:px-12 {reverse
+	class="flex w-full max-w-[1800px] flex-col-reverse items-center justify-center px-8 py-12 md:px-12 {reverse
 		? 'md:flex-row-reverse'
 		: 'md:flex-row'} gap-4"
 >
