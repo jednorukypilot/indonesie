@@ -35,7 +35,7 @@
 				<div class="flex flex-col items-center justify-start gap-12 sm:flex-row">
 					<Button
 						label={$t('catalog.hero.more')}
-						href="#content"
+						href="#catalog-intro"
 						buttonStyle={ButtonStyle.PRIMARY}
 					/>
 				</div>

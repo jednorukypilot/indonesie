@@ -39,16 +39,18 @@
 			class=" flex h-full w-full flex-col-reverse items-center justify-center
 				  md:w-7/8 md:justify-evenly {reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4 xl:gap-12"
 		>
-			<div class="flex h-full w-full flex-col justify-evenly overflow-auto p-4 md:h-min md:w-1/2">
-				<h2 class="mb-4 font-serif text-3xl font-bold text-gray-800 md:text-5xl lg:w-4/5">
+			<div
+				class="flex h-full w-full flex-col justify-evenly overflow-auto p-4 text-start text-gray-800 md:h-min md:w-1/2"
+			>
+				<h2 class="mb-4 font-serif text-3xl font-bold md:text-5xl lg:w-4/5">
 					{data.title}
 				</h2>
-				<span class="mb-2 text-lg text-gray-800">
+				<span class="mb-2 text-lg">
 					{$t('catalog.listings.min_investment')}
 					<span class="text-primary font-bold">{investmentAmount}</span>
 				</span>
 				{#each data.paragraphs as paragraph}
-					<p class="mb-4 text-lg text-gray-800">{paragraph}</p>
+					<p class="mb-4 text-lg">{paragraph}</p>
 				{/each}
 				<div class=" mt-5 flex w-full flex-row items-center justify-center gap-6 md:justify-start">
 					<CatalogPoint type={CatalogPointType.AREA} number={data.area} />

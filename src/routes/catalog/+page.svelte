@@ -4,6 +4,7 @@
 	import { t } from 'svelte-i18n';
 	import type { PageData } from './$types';
 	import CatalogListing from '$lib/components/catalog/CatalogListing.svelte';
+	import ContactBanner from '$lib/components/ContactBanner.svelte';
 
 	export let data: PageData;
 
@@ -13,7 +14,10 @@
 <div class="bg-base-100 flex w-full grow flex-col">
 	<CatalogHero />
 	<GradientBackground>
-		<div class="mx-4 my-20 flex w-full flex-col items-center justify-center text-center md:w-5/8">
+		<div
+			class="mx-4 my-20 flex w-full flex-col items-center justify-center text-center md:w-5/8"
+			id="catalog-intro"
+		>
 			<h2 class="mb-8 font-serif text-3xl font-bold text-gray-900 md:text-4xl">
 				{$t('catalog.title.title')}
 			</h2>
@@ -25,4 +29,5 @@
 	{#each catalog as data, index}
 		<CatalogListing {data} reverse={index % 2 === 1} />
 	{/each}
+	<ContactBanner />
 </div>
