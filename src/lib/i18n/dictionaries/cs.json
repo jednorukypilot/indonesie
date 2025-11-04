@@ -62,5 +62,8 @@
 			"plot_count": "Počet pozemků:",
 			"estate_count": "Počet nemovitostí:"
 		}
+	},
+	"listing": {
+		"interest_btn": "Mám zájem"
 	}
 }

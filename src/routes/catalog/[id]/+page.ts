@@ -1,5 +1,5 @@
 import type { CatalogData } from '$lib/types';
-import { createCatalogData } from '$lib/types';
+import { createCatalogData } from '$lib/utils/factory.js';
 import type { Lang } from '$lib/i18n';
 import { DEFAULT_LANG } from '$lib/i18n';
 import { error } from '@sveltejs/kit';

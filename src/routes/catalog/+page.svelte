@@ -11,7 +11,7 @@
 	$: catalog = data.catalog;
 </script>
 
-<div class="bg-base-100 flex w-full grow flex-col">
+<div class="bg-base-100 flex w-full grow flex-col min-h-screen ">
 	<CatalogHero />
 	<GradientBackground>
 		<div

@@ -9,7 +9,7 @@
 		class="flex flex-col items-start justify-evenly gap-12 text-center text-sm text-white md:flex-row"
 	>
 		<div class="flex flex-col items-start justify-start">
-			<img src="images/logos/logo-inverz.svg" alt="logo" class="flex h-12" />
+			<img src="/images/logos/logo-inverz.svg" alt="logo" class="flex h-12" />
 		</div>
 		<div class="flex h-full flex-col items-start">
 			<h3 class="text-secondary mb-4 font-serif text-xl font-bold">{$t('footer.navigation')}</h3>

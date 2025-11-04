@@ -68,7 +68,7 @@
 >
 	<!-- Header -->
 	<div class="flex items-center justify-between border-b p-6">
-		<img src="images/logos/logo.svg" alt="logo" class="h-12" />
+		<img src="/images/logos/logo.svg" alt="logo" class="h-12" />
 		<button
 			on:click={closeSidebar}
 			class="rounded-full p-2 transition-colors hover:bg-gray-100"

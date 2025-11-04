@@ -1,4 +1,5 @@
-import { createCatalogData, type CatalogData } from '$lib/types';
+import { createCatalogData } from '$lib/utils/factory.js';
+import type { CatalogData } from '$lib/types';
 import type { Lang } from '$lib/i18n';
 import { DEFAULT_LANG } from '$lib/i18n';
 

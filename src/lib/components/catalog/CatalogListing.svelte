@@ -20,12 +20,12 @@
 
 <div class="relative flex h-[1000px] flex-col overflow-hidden md:h-[800px] lg:h-[600px]">
 	{#if !reverse}
-		<picture class="h-full w-full">
+		<picture class="hidden h-full w-full md:inline">
 			<source
-				srcset={`${'images/pages/catalog/bg-property.jpg'} 1x, ${'images/pages/catalog/bg-property@2x.jpg'} 2x`}
+				srcset={`${'/images/pages/catalog/bg-property.jpg'} 1x, ${'/images/pages/catalog/bg-property@2x.jpg'} 2x`}
 			/>
 			<img
-				src={'images/pages/catalog/bg-property.jpg'}
+				src={'/images/pages/catalog/bg-property.jpg'}
 				alt={'bg'}
 				class="h-full w-full object-cover"
 			/>
@@ -38,8 +38,10 @@
 		on:keydown={handleListingClick}
 	>
 		<div
-			class=" flex h-full w-full flex-col-reverse items-center justify-center
-				  md:w-7/8 md:justify-evenly {reverse ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4 xl:gap-12"
+			class=" flex h-full w-full max-w-[1400px] flex-col-reverse items-center
+				  justify-center md:w-7/8 md:justify-evenly {reverse
+				? 'md:flex-row-reverse'
+				: 'md:flex-row'} gap-4 xl:gap-12"
 		>
 			<div
 				class="flex h-full w-full flex-col justify-evenly overflow-auto p-4 text-start text-gray-800 md:h-min md:w-1/2"

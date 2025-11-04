@@ -17,7 +17,7 @@
 		class="flex min-h-[86px] flex-row items-center justify-between gap-4 border-b-2 bg-white px-4 py-2 md:justify-evenly md:gap-8"
 	>
 		<a href="/">
-			<img src="images/logos/logo.svg" alt="logo" class="flex h-16" />
+			<img src="/images/logos/logo.svg" alt="logo" class="flex h-16" />
 		</a>
 		<nav class="hidden flex-row items-center justify-center p-2 md:flex">
 			{#each MENU_TILES as tile}
@@ -36,7 +36,7 @@
 				window.dispatchEvent(event);
 			}}
 		>
-			<img src="images/icons/burger.svg" alt="menu" class="h-8 w-8" />
+			<img src="/images/icons/burger.svg" alt="menu" class="h-8 w-8" />
 		</button>
 	</div>
 </div>

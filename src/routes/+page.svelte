@@ -32,7 +32,7 @@
 	({ articles } = data);
 </script>
 
-<div class="bg-base-100 flex w-full grow flex-col">
+<div class="bg-base-100 flex min-h-screen w-full grow flex-col">
 	<HomeHero />
 	<GradientBackground>
 		<div

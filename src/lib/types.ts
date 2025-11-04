@@ -19,31 +19,27 @@ export type ArticleData = {
 
 export type CatalogData = {
 	id: string;
+	name: string;
 	title: string;
-	label?: string;
 	investment: number;
 	currency?: string;
 	paragraphs: string[];
+	coverImg?: {
+		small: {
+			'1x': string;
+			'2x': string;
+		};
+		large: {
+			'1x': string;
+			'2x': string;
+		};
+	};
 	imageSrc: string[];
 	area: number;
 	plotCount: number;
 	estateCount: number;
 };
 
-export function createCatalogData(raw: any): CatalogData {
-	return {
-		id: raw.id,
-		title: raw.title,
-		label: raw.label,
-		investment: raw.investment,
-		currency: raw.currency,
-		paragraphs: raw.paragraphs,
-		imageSrc: raw.imageSrc,
-		area: raw.area,
-		plotCount: raw.plot_count,
-		estateCount: raw.estate_count
-	};
-}
 
 export type QnAData = {
 	title: string;

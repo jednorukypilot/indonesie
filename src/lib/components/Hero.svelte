@@ -3,9 +3,16 @@
 		small: { '1x': string; '2x': string };
 		large: { '1x': string; '2x': string };
 	};
+
+	export let height: number = 582;
+
+	$: heightStyle = `height: ${height}px;`;
 </script>
 
-<section class="relative flex h-[582px] w-full items-center justify-center overflow-hidden">
+<section
+	class="relative flex w-full items-center justify-center overflow-hidden"
+	style={heightStyle}
+>
 	<picture class="absolute inset-0 block h-full w-full">
 		<!-- Small screens -->
 		<source

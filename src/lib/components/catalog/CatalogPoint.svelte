@@ -4,15 +4,28 @@
 
 	export let type: CatalogPointType;
 	export let number: number;
+	export let style: 'light' | 'dark' = 'dark';
 
 	function getIconForType(pointType: CatalogPointType): string {
+		if (style === 'light') {
+			switch (pointType) {
+				case 'area':
+					return '/images/icons/planning-white.svg';
+				case 'plot_count':
+					return '/images/icons/blueprint-white.svg';
+				case 'estate_count':
+					return '/images/icons/plot-white.svg';
+				default:
+					return '';
+			}
+		}
 		switch (pointType) {
 			case 'area':
-				return 'images/icons/planning.svg';
+				return '/images/icons/planning.svg';
 			case 'plot_count':
-				return 'images/icons/blueprint.svg';
+				return '/images/icons/blueprint.svg';
 			case 'estate_count':
-				return 'images/icons/plot.svg';
+				return '/images/icons/plot.svg';
 			default:
 				return '';
 		}
@@ -44,13 +57,18 @@
 		}
 	}
 
+	function getTextColorClass(style: 'light' | 'dark'): string {
+		return style === 'light' ? 'text-white' : 'text-gray-800';
+	}
+
 	$: currentIcon = getIconForType(type);
 	$: typeLabel = getTypeLabel(type);
 	$: formattedValue = getFormattedValue(type, number);
+	$: textColorClass = getTextColorClass(style);
 </script>
 
 <div class="flex flex-col items-start justify-center">
 	<img src={currentIcon} alt={`${type} icon`} class="mb-2 h-12 w-12" />
-	<span class="text-sm font-medium text-gray-800">{typeLabel}</span>
-	<span class="text-lg font-bold text-gray-800">{formattedValue}</span>
+	<span class="text-sm font-medium {textColorClass}">{typeLabel}</span>
+	<span class="text-lg font-bold {textColorClass}">{formattedValue}</span>
 </div>
