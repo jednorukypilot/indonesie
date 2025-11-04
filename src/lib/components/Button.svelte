@@ -1,5 +1,3 @@
-<!-- exported enum button style green, primary, secondary -->
-
 <script lang="ts">
 	import { ButtonStyle } from '$lib/enums';
 

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Button from '$lib/components/Button.svelte';
 	import Hero from '$lib/components/Hero.svelte';
 	import { ButtonStyle } from '$lib/enums';
@@ -23,7 +23,7 @@
 			<div class="max-w-4xl text-center">
 				<h2 class="mb-4 font-serif text-3xl leading-tight font-bold text-white md:text-5xl">
 					{$t('home.hero.headline')}
-					<span class="text-secondary">{$t('home.hero.headline2')}</span>
+					<span class="text-secondary">{$t('home.hero.highlight')}</span>
 				</h2>
 				<p class="mb-6 text-xl text-gray-100 md:text-2xl">
 					{$t('home.hero.sub_line')}
@@ -33,8 +33,12 @@
 				</p>
 
 				<div class="flex flex-col items-center justify-center gap-12 sm:flex-row">
-					<Button label={$t('home.hero.more')} href="#" buttonStyle={ButtonStyle.GREEN} />
-					<Button label={$t('home.hero.contact')} href="#" buttonStyle={ButtonStyle.PRIMARY} />
+					<Button label={$t('home.hero.more')} href="#content" buttonStyle={ButtonStyle.GREEN} />
+					<Button
+						label={$t('home.hero.contact')}
+						href="/contact"
+						buttonStyle={ButtonStyle.PRIMARY}
+					/>
 				</div>
 			</div>
 		</div>

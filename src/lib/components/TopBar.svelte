@@ -30,7 +30,9 @@
 	<div
 		class="flex min-h-[86px] flex-row items-center justify-center gap-4 border-b-2 bg-white px-4 py-2 md:gap-8"
 	>
-		<img src="images/logos/logo.svg" alt="logo" class="flex h-16" />
+		<a href="/">
+			<img src="images/logos/logo.svg" alt="logo" class="flex h-16" />
+		</a>
 		<nav class="flex flex-row items-center justify-center p-2">
 			{#each menuTiles as tile}
 				<a href={tile.link} class="text-neutral-content mx-4 hover:underline">{tile.title}</a>

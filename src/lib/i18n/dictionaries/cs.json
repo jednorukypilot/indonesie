@@ -21,7 +21,7 @@
 	"home": {
 		"hero": {
 			"headline": "Investujte do pozemků v ",
-			"headline2": "Indonésii",
+			"highlight": "Indonésii",
 			"sub_line": "Váš kousek ráje, který roste na hodnotě",
 			"text": "Objevte jedinečnou příležitost vlastnit pozemek v Indonésii – destinaci s rostoucí hodnotou a obrovským potenciálem pro pronájem. Spojte exotický životní styl s bezpečnou a výnosnou investicí.",
 			"more": "Více informací",
@@ -42,6 +42,25 @@
 		},
 		"qna": {
 			"title": "Čato se nás ptáte"
+		}
+	},
+	"catalog": {
+		"hero": {
+			"headline": "Objevte pozemky v ",
+			"highlight": "Indonésii",
+			"sub_line": "Katalog pozemků",
+			"text": "Vyberte si z aktuální nabídky pozemků v Indonésii. Každá lokalita nabízí jedinečný potenciál – ať už hledáte bezpečnou investici, prostor pro výstavbu vily, nebo příležitost k pronájmu s atraktivním výnosem.",
+			"more": "Nabídka"
+		},
+		"title": {
+			"title": "Vyberte si z aktuální nabídky pozemků",
+			"subtitle": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Mauris elementum mauris vitae tortor. Aenean id metus id velit ullamcorper pulvinar. Nulla non lectus sed nisl molestie malesuada."
+		},
+		"listings": {
+			"min_investment": "Minimální výše investice:",
+			"area": "Rozloha:",
+			"plot_count": "Počet pozemků:",
+			"estate_count": "Počet nemovitostí:"
 		}
 	}
 }

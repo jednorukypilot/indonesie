@@ -1,0 +1,57 @@
+[
+	{
+		"id": "001",
+		"title": "Beachside living at Villa Park CAÑAZA",
+		"label": "TOP investice",
+		"investment": 3652500,
+		"currency": "USD",
+		"paragraphs": [
+			"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer tempor. Ut tempus purus at lorem. Etiam bibendum elit eget erat. Fusce consectetuer risus a nunc. Cras pede libero, dapibus nec"
+		],
+		"imageSrc": ["images/pages/catalog/canaza_beach_park.jpg"],
+		"area": 12360,
+		"plot_count": 25,
+		"estate_count": 5
+	},
+	{
+		"id": "002",
+		"title": "Wainyapu Sumba",
+		"label": "TOP investice",
+		"investment": 6652500,
+		"currency": "USD",
+		"paragraphs": [
+			"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer tempor. Ut tempus purus at lorem. Etiam bibendum elit eget erat. Fusce consectetuer risus a nunc. Cras pede libero, dapibus nec"
+		],
+		"imageSrc": ["images/pages/catalog/wainyapu_sumba.jpg"],
+		"area": 12360,
+		"plot_count": 120,
+		"estate_count": 15
+	},
+	{
+		"id": "003",
+		"title": "Beachside living at Villa Park CAÑAZA",
+		"label": "Nový projekt",
+		"investment": 3652500,
+		"currency": "USD",
+		"paragraphs": [
+			"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer tempor. Ut tempus purus at lorem. Etiam bibendum elit eget erat. Fusce consectetuer risus a nunc. Cras pede libero, dapibus nec"
+		],
+		"imageSrc": ["images/pages/catalog/cat_3.jpg"],
+		"area": 12360,
+		"plot_count": 25,
+		"estate_count": 5
+	},
+	{
+		"id": "004",
+		"title": "Wainyapu Sumba",
+		"investment": 6652500,
+		"currency": "USD",
+		"paragraphs": [
+			"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer tempor. Ut tempus purus at lorem. Etiam bibendum elit eget erat. Fusce consectetuer risus a nunc. Cras pede libero, dapibus nec"
+		],
+		"imageSrc": ["images/pages/catalog/cat_4.jpg"],
+		"area": 12360,
+		"plot_count": 120,
+		"estate_count": 15
+	}
+]
