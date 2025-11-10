@@ -21,7 +21,8 @@ const config = {
 			handleHttpError: 'warn',
 			handleMissingId: 'warn',
 			entries: ['*']
-		}
+		},
+		paths: { base: dev ? '' : '/indonesie' },
 	}
 };
 
