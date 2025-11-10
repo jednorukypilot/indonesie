@@ -11,6 +11,25 @@ const catalogFiles = import.meta.glob('$lib/content/*/catalog/catalog.json', {
 
 const pathFor = (lang: Lang) => `/src/lib/content/${lang}/catalog/catalog.json`;
 
+export const prerender = true;
+
+export async function entries() {
+	const languages: Lang[] = ['cs', 'en'];
+	const entries = [];
+
+	for (const lang of languages) {
+		const rawCatalog = catalogFiles[pathFor(lang)] ?? catalogFiles[pathFor(DEFAULT_LANG)];
+		if (rawCatalog) {
+			const catalog: CatalogData[] = rawCatalog.map(createCatalogData);
+			for (const item of catalog) {
+				entries.push({ id: item.id });
+			}
+		}
+	}
+
+	return entries;
+}
+
 export const load = async ({ params, parent }) => {
 	const { lang } = (await parent()) as { lang: Lang };
 	const { id } = params;
