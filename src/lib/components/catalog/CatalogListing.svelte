@@ -33,7 +33,7 @@
 	{/if}
 
 	<button
-		class="absolute inset-0 flex items-start justify-center bg-white/90"
+		class="absolute inset-0 flex cursor-pointer items-start justify-center bg-white/90"
 		on:click={handleListingClick}
 		on:keydown={handleListingClick}
 	>
