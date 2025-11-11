@@ -14,8 +14,8 @@
 		</div>
 		<div class="flex h-full flex-col items-start">
 			<h3 class="text-secondary mb-4 font-serif text-xl font-bold">{$t('footer.navigation')}</h3>
-			<a href="{base}/" class="mb-2 underline">{$t('footer.offers')}</a>
-			<a href="{base}/faq" class="mb-2 underline">{$t('footer.faq')}</a>
+			<a href="{base}/catalog" class="mb-2 underline">{$t('footer.offers')}</a>
+			<a href="{base}/#faq" class="mb-2 underline">{$t('footer.faq')}</a>
 			<a href="{base}/important-links" class="mb-2 underline">{$t('footer.important_links')}</a>
 		</div>
 		<div class="flex h-full flex-col items-start">

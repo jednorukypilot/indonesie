@@ -1,0 +1,3 @@
+<div>
+    Informace
+</div>
