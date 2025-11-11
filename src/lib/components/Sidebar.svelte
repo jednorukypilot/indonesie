@@ -5,6 +5,7 @@
 	import { onMount } from 'svelte';
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 	import { faPhone, faTimes } from '@fortawesome/free-solid-svg-icons';
+	import { base } from '$app/paths';
 
 	let isOpen = false;
 	let sidebarElement: HTMLElement;
@@ -68,7 +69,7 @@
 >
 	<!-- Header -->
 	<div class="flex items-center justify-between border-b p-6">
-		<img src="/images/logos/logo.svg" alt="logo" class="h-12" />
+		<img src="{base}/images/logos/logo.svg" alt="logo" class="h-12" />
 		<button
 			on:click={closeSidebar}
 			class="rounded-full p-2 transition-colors hover:bg-gray-100"
@@ -82,7 +83,7 @@
 	<nav class="py-6">
 		{#each MENU_TILES as tile}
 			<a
-				href={tile.link}
+				href="{base}{tile.link}"
 				class="hover:text-primary block border-b border-gray-100 px-6 py-4 text-lg text-gray-800 transition-colors last:border-b-0 hover:bg-gray-100"
 				on:click={closeSidebar}
 			>
