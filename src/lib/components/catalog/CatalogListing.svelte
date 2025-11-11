@@ -4,6 +4,7 @@
 	import CatalogPoint from './CatalogPoint.svelte';
 	import { CatalogPointType } from '$lib/enums';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 
 	export let data: CatalogData;
 	export let reverse: boolean = false;
@@ -14,7 +15,7 @@
 
 	function handleListingClick() {
 		console.log(`Listing clicked: ${data.id}`);
-		goto(`/catalog/${data.id}`);
+		goto(`${base}/catalog/${data.id}`);
 	}
 </script>
 
@@ -22,10 +23,10 @@
 	{#if !reverse}
 		<picture class="hidden h-full w-full md:inline">
 			<source
-				srcset={`${'/images/pages/catalog/bg-property.jpg'} 1x, ${'/images/pages/catalog/bg-property@2x.jpg'} 2x`}
+				srcset={`${base}/images/pages/catalog/bg-property.jpg 1x, ${base}/images/pages/catalog/bg-property@2x.jpg 2x`}
 			/>
 			<img
-				src={'/images/pages/catalog/bg-property.jpg'}
+				src="{base}/images/pages/catalog/bg-property.jpg"
 				alt={'bg'}
 				class="h-full w-full object-cover"
 			/>

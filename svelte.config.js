@@ -22,7 +22,9 @@ const config = {
 			handleMissingId: 'warn',
 			entries: ['*']
 		},
-		paths: { base: dev ? '' : '/indonesie' },
+		paths: { 
+			base: process.env.NODE_ENV === 'production' ? '/indonesie' : '' 
+		},
 	}
 };
 
