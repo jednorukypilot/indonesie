@@ -73,9 +73,3 @@
 	<span class="text-sm font-medium {textColorClass}">{typeLabel}</span>
 	<span class="text-lg font-bold {textColorClass}">{formattedValue}</span>
 </div>
-
-<div class="flex flex-col items-start justify-center">
-	<img src={currentIcon} alt={`${type} icon`} class="mb-2 h-12 w-12" />
-	<span class="text-sm font-medium {textColorClass}">{typeLabel}</span>
-	<span class="text-lg font-bold {textColorClass}">{formattedValue}</span>
-</div>
