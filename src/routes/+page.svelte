@@ -4,7 +4,7 @@
 	import ContactBanner from '$lib/components/ContactBanner.svelte';
 	import HomeHero from '$lib/components/home/HomeHero.svelte';
 	import HomePoint from '$lib/components/home/HomePoint.svelte';
-	import HomeQnA from '$lib/components/home/HomeQnA.svelte';
+	import HomeFAQ from '$lib/components/home/HomeFAQ.svelte';
 	import type { ArticleData, HomePointData } from '$lib/types';
 	import { t } from 'svelte-i18n';
 
@@ -48,5 +48,5 @@
 		<HomeArticle {article} reverse={index % 2 === 1} />
 	{/each}
 	<ContactBanner />
-	<HomeQnA />
+	<HomeFAQ />
 </div>
