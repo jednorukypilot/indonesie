@@ -7,7 +7,7 @@ export const MENU_TILES: MenuTile[] = [
 	},
 	{
 		title: 'O nás',
-		link: '/'
+		link: '/about'
 	},
 	{
 		title: 'Kontakt',

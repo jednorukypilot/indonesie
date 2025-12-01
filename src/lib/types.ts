@@ -40,8 +40,13 @@ export type CatalogData = {
 	estateCount: number;
 };
 
-
-export type QnAData = {
+export type FAQData = {
 	title: string;
 	paragraphs: string[];
+};
+
+export type AboutPointData = {
+	title: string;
+	description: string;
+	icon: string;
 };

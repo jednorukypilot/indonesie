@@ -3,47 +3,13 @@
 	import { ButtonStyle } from '$lib/enums';
 	import type { ArticleData } from '$lib/types';
 	import { t } from 'svelte-i18n';
+	import { highlightText } from '$lib/utils/text';
+	import { base, resolve } from '$app/paths';
 
 	export let article: ArticleData;
 	export let reverse: boolean = false;
 
-	function highlightTitle(
-		title: string,
-		highlights: string[]
-	): Array<{ text: string; highlighted: boolean }> {
-		if (!highlights || highlights.length === 0) {
-			return [{ text: title, highlighted: false }];
-		}
-
-		let result: Array<{ text: string; highlighted: boolean }> = [
-			{ text: title, highlighted: false }
-		];
-
-		highlights.forEach((highlight) => {
-			const newResult: Array<{ text: string; highlighted: boolean }> = [];
-			result.forEach((part) => {
-				if (part.highlighted) {
-					newResult.push(part);
-					return;
-				}
-
-				const regex = new RegExp(`(${highlight})`, 'gi');
-				const splitText = part.text.split(regex);
-
-				splitText.forEach((text, index) => {
-					if (text) {
-						const isHighlight = regex.test(text);
-						newResult.push({ text, highlighted: isHighlight });
-					}
-				});
-			});
-			result = newResult;
-		});
-
-		return result;
-	}
-
-	$: titleParts = highlightTitle(article.title, article.highlights);
+	$: titleParts = highlightText(article.title, article.highlights);
 </script>
 
 <div
@@ -66,8 +32,16 @@
 				<p class="mb-4 text-gray-700">{paragraph}</p>
 			{/each}
 			<div class="mt-5 flex w-full flex-row items-center justify-center gap-5 md:justify-start">
-				<Button label={$t('nav.catalog')} href="#" buttonStyle={ButtonStyle.PRIMARY} />
-				<Button label={$t('nav.write')} href="#" buttonStyle={ButtonStyle.SECONDARY} />
+				<Button
+					label={$t('nav.catalog')}
+					href={resolve(`/catalog`)}
+					buttonStyle={ButtonStyle.PRIMARY}
+				/>
+				<Button
+					label={$t('nav.write')}
+					href={resolve(`/contact`)}
+					buttonStyle={ButtonStyle.SECONDARY}
+				/>
 			</div>
 		</div>
 	</div>

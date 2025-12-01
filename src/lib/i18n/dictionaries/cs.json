@@ -41,7 +41,7 @@
 			"button_label": "Kontaktujte nás"
 		},
 		"qna": {
-			"title": "Čato se nás ptáte"
+			"title": "Často se nás ptáte"
 		}
 	},
 	"catalog": {
@@ -65,5 +65,62 @@
 	},
 	"listing": {
 		"interest_btn": "Mám zájem"
+	},
+	"about": {
+		"hero": {
+			"headline": "Váš partner pro bezpečné investice do pozemků v Indonésii",
+			"highlight": "bezpečné investice Indonésii",
+			"paragraphs": [
+				"Jsme česko–indonéský tým, který žije v Indonésii už přes 10 let. Přes čtyři roky se zaměřujeme výhradně na investování do pozemků a vyhledávání lokalit s největším růstovým potenciálem.",
+				"Procestovali jsme Indonésii od Mentawais až po Papuu. Poznali jsme ty nejodlehlejší kouty země, dynamicky se rozvíjející regiony i místa, které růst teprve čeká. Bali, Lombok, Nusa Tenggara nebo Sumbawa jsou pro nás samozřejmostí, ale sledujeme i méně známé oblasti s velkým potenciálem do budoucnosti.",
+				"Naším cílem je zpřístupnit českým investorům prověřené a bezpečné příležitosti v jedné z nejrychleji rostoucích ekonomik jihovýchodní Asie."
+			],
+			"contact": "Domluvit schůzku"
+		},
+		"points": {
+			"title": "Proč nám můžete důvěřovat",
+			"text": "Investování v Indonésii vyžaduje lokální znalosti, přímé kontakty a profesionální právní proces. Proto máme vybudovanou strukturu, která eliminuje všechna podstatná rizika.",
+			"points": [
+				{
+					"title": "Lokální tým v Indonésii",
+					"description": "Spolupracujeme s prověřenými notáři, právníky, geodety a lokálními partnery. Každý pozemek prověřujeme z právního, tržního i technického hlediska."
+				},
+				{
+					"title": "Česká advokátní kancelář",
+					"description": "Spolupracujeme s českou advokátní kanceláří, která investorům pomáhá porozumět veškeré dokumentaci, kontroluje smlouvy a dohlíží na správnou strukturu celé investice. Díky tomu mají čeští investoři právní jistotu doma i v Indonésii."
+				},
+				{
+					"title": "Transparentní a bezpečný proces",
+					"description": "Každou nabídku stavíme na reálných datech, due diligence a kontrole všech zásadních dokumentů."
+				}
+			]
+		},
+		"text": {
+			"title": "Jak pomáháme investorům",
+			"title_highlights": ["investorům"],
+			"subtitle": "Naším cílem je provést vás celým procesem tak, aby investice byla bezpečná, čitelná a dávala dlouhodobý finanční smysl.",
+			"points_title": "Naše role",
+			"points": [
+				"Vyhledáváme pozemky s reálným růstovým potenciálem",
+				"Provádíme důkladnou due diligence (právní i tržní)",
+				"Zajišťujeme vhodnou investiční strukturu (leasehold / share deal / PMA)",
+				"Dohlížíme na podpisy smluv u prověřeného indonéského notáře",
+				"Poskytujeme detailní informace o vývoji v oblasti (projekty, infrastruktura, růst dat)"
+			],
+			"conclusion": [
+				"Žádné komplikace.",
+				"Žádné skryté podmínky.",
+				"Jen čistá a transparentní investice do pozemku."
+			]
+		},
+		"contact_banner": {
+			"title": "Domluvte si nezávaznou konzultaci",
+			"title_highlights": ["nezávaznou", "konzultaci"],
+			"text": "Rádi vám během 15 minut vysvětlíme, jak celý proces funguje, a ukážeme aktuální příležitosti napříč Indonésií.",
+			"button_label": "Domluvit Schůzku"
+		},
+		"faq": {
+			"title": "Čašté dotazy"
+		}
 	}
 }

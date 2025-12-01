@@ -11,7 +11,7 @@
 	$: catalog = data.catalog;
 </script>
 
-<div class="bg-base-100 flex w-full grow flex-col min-h-screen ">
+<div class="bg-base-100 flex min-h-screen w-full grow flex-col">
 	<CatalogHero />
 	<GradientBackground>
 		<div
@@ -29,5 +29,9 @@
 	{#each catalog as data, index}
 		<CatalogListing {data} reverse={index % 2 === 1} />
 	{/each}
-	<ContactBanner />
+	<ContactBanner
+		title={$t('home.contact_banner.title')}
+		text={$t('home.contact_banner.text')}
+		buttonLabel={$t('home.contact_banner.button_label')}
+	/>
 </div>

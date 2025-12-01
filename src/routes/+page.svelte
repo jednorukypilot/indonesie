@@ -47,6 +47,10 @@
 	{#each articles as article, index}
 		<HomeArticle {article} reverse={index % 2 === 1} />
 	{/each}
-	<ContactBanner />
+	<ContactBanner
+		title={$t('home.contact_banner.title')}
+		text={$t('home.contact_banner.text')}
+		buttonLabel={$t('home.contact_banner.button_label')}
+	/>
 	<HomeFAQ />
 </div>

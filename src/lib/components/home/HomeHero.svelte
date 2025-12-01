@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import Button from '$lib/components/Button.svelte';
 	import Hero from '$lib/components/Hero.svelte';
 	import { ButtonStyle } from '$lib/enums';
@@ -36,7 +37,7 @@
 					<Button label={$t('home.hero.more')} href="#content" buttonStyle={ButtonStyle.GREEN} />
 					<Button
 						label={$t('home.hero.contact')}
-						href="/contact"
+						href={resolve(`/contact`)}
 						buttonStyle={ButtonStyle.PRIMARY}
 					/>
 				</div>
