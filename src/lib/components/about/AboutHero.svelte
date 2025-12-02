@@ -2,8 +2,7 @@
 	import { ButtonStyle } from '$lib/enums';
 	import { t } from 'svelte-i18n';
 	import Button from '../Button.svelte';
-	import { base, resolve } from '$app/paths';
-	import { Hero } from '$lib/index';
+	import { base } from '$app/paths';
 	import { highlightText } from '$lib/utils/text';
 
 	$: titleParts = highlightText($t('about.hero.headline'), $t('about.hero.highlight').split(' '));
@@ -45,7 +44,7 @@
 				<div class=" mt-5 flex w-full flex-row items-center justify-center gap-6 lg:justify-start">
 					<Button
 						label={$t('about.hero.contact')}
-						href={resolve(`/contact`)}
+						href={`${base}/contact`}
 						buttonStyle={ButtonStyle.PRIMARY}
 					/>
 				</div>

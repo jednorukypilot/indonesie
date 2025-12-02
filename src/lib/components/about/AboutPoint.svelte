@@ -9,7 +9,7 @@
 <div class="mx-8 my-6 flex w-full max-w-md flex-row items-center text-center lg:flex-col">
 	<FontAwesomeIcon
 		icon={faCircleCheck}
-		class="mr-4 mb-4 text-4xl text-gray-900  lg:mr-0 lg:text-5xl"
+		class="mr-4 mb-4 text-4xl text-warning lg:mr-0 lg:text-5xl"
 	/>
 	<div
 		class="ml-4 text-start lg:ml-0 lg:flex lg:flex-col lg:items-center lg:justify-center lg:text-center"

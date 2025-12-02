@@ -4,7 +4,7 @@
 	import type { ArticleData } from '$lib/types';
 	import { t } from 'svelte-i18n';
 	import { highlightText } from '$lib/utils/text';
-	import { base, resolve } from '$app/paths';
+	import { base } from '$app/paths';
 
 	export let article: ArticleData;
 	export let reverse: boolean = false;
@@ -34,12 +34,12 @@
 			<div class="mt-5 flex w-full flex-row items-center justify-center gap-5 md:justify-start">
 				<Button
 					label={$t('nav.catalog')}
-					href={resolve(`/catalog`)}
+					href={`${base}/catalog`}
 					buttonStyle={ButtonStyle.PRIMARY}
 				/>
 				<Button
 					label={$t('nav.write')}
-					href={resolve(`/contact`)}
+					href={`${base}/contact`}
 					buttonStyle={ButtonStyle.SECONDARY}
 				/>
 			</div>

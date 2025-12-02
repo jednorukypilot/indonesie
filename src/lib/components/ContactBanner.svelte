@@ -1,9 +1,8 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { base } from '$app/paths';
 	import Button from '$lib/components/Button.svelte';
 	import { ButtonStyle } from '$lib/enums';
 	import { highlightText } from '$lib/utils/text';
-	import { t } from 'svelte-i18n';
 
 	let images = [
 		'images/pages/homepage/bg-cta-section.jpg',
@@ -41,6 +40,6 @@
 		<p class="mb-6 max-w-3xl text-lg text-white md:text-xl">
 			{text}
 		</p>
-		<Button label={buttonLabel} href={resolve(`/contact`)} buttonStyle={ButtonStyle.PRIMARY} />
+		<Button label={buttonLabel} href={`${base}/contact`} buttonStyle={ButtonStyle.PRIMARY} />
 	</div>
 </div>
