@@ -10,6 +10,10 @@ export const MENU_TILES: MenuTile[] = [
 		link: '/about'
 	},
 	{
+		title: 'Právní proces',
+		link: '/legal'
+	},
+	{
 		title: 'Kontakt',
 		link: '/contact'
 	}
