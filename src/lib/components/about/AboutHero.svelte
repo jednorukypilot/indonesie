@@ -9,7 +9,7 @@
 	$: paragraphs = $t('about.hero.paragraphs');
 </script>
 
-<div class="relative flex h-[1400px] flex-col overflow-hidden sm:h-[1200px] lg:h-[1000px] xl:h-[800px]">
+<div class="relative w-full flex h-[1400px] flex-col overflow-hidden sm:h-[1200px] lg:h-[1000px] xl:h-[800px]">
 	<picture class="inline h-full w-full">
 		<source
 			srcset={`${base}/images/pages/about/bg-hero.jpg 1x, ${base}/images/pages/about/bg-hero@2x.jpg 2x`}
@@ -32,7 +32,7 @@
 				<h2 class="mb-4 font-serif text-3xl font-bold text-white md:text-5xl lg:w-4/5">
 					{#each titleParts as part}
 						{#if part.highlighted}
-							<span class="text-primary">{part.text}</span>
+							<span class="text-secondary">{part.text}</span>
 						{:else}
 							{part.text}
 						{/if}

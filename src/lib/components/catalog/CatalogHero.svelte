@@ -23,7 +23,7 @@
 			<div class="max-w-4xl text-start">
 				<h2 class="mb-4 font-serif text-3xl leading-tight font-bold text-white md:text-5xl">
 					{$t('catalog.hero.headline')}
-					<span class="text-secondary">{$t('catalog.hero.highlight')}</span>
+					<span class="text-primary">{$t('catalog.hero.highlight')}</span>
 				</h2>
 				<p class="mb-6 text-xl text-gray-100 md:text-2xl">
 					{$t('catalog.hero.sub_line')}
@@ -36,7 +36,7 @@
 					<Button
 						label={$t('catalog.hero.more')}
 						href="#catalog-intro"
-						buttonStyle={ButtonStyle.PRIMARY}
+						buttonStyle={ButtonStyle.GREEN}
 					/>
 				</div>
 			</div>
