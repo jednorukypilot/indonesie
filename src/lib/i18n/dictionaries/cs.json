@@ -151,5 +151,13 @@
 				"message_max": "Zpráva může mít maximálně 1000 znaků"
 			}
 		}
+	},
+	"legal": {
+		"hero": {
+			"headline": "Jak funguje bezpečný právní proces při investici do pozemku v Indonésii",
+			"highlight": ["bezpečný", "právní", "proces"],
+			"text": "Jednoduché a transparentní kroky, které zajistí právně bezpečnou investici do freehold pozemků přes vaši indonéskou firmu (PT PMA).",
+			"contact": "Domluvit schůzku"
+		}
 	}
 }
