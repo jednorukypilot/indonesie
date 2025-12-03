@@ -12,6 +12,8 @@ export function highlightText(
 		return [{ text: title, highlighted: false }];
 	}
 
+	highlights.sort((a, b) => b.length - a.length);
+
 	let result: Array<{ text: string; highlighted: boolean }> = [{ text: title, highlighted: false }];
 
 	highlights.forEach((highlight) => {
