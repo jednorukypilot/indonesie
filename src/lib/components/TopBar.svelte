@@ -8,12 +8,12 @@
 </script>
 
 <div class="flex flex-col">
-	<div class="bg-primary hidden min-h-14 flex-row items-center justify-center p-4 md:flex">
+	<!-- <div class="bg-primary hidden min-h-14 flex-row items-center justify-center p-4 md:flex">
 		<span class="text-center text-gray-100">
 			{$t('header.need_help')}
 			<a href="tel:+420123456789" class="ml-2 underline"> {$t('phone')}</a>
 		</span>
-	</div>
+	</div> -->
 	<div
 		class="flex min-h-[86px] flex-row items-center justify-between gap-4 border-b-2 bg-white px-4 py-2 md:justify-evenly md:gap-8"
 	>

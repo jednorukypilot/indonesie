@@ -12,10 +12,10 @@
 <div class="relative w-full flex h-[1400px] flex-col overflow-hidden sm:h-[1200px] lg:h-[1000px] xl:h-[800px]">
 	<picture class="inline h-full w-full">
 		<source
-			srcset={`${base}/images/pages/about/bg-hero.jpg 1x, ${base}/images/pages/about/bg-hero@2x.jpg 2x`}
+			srcset={`${base}/images/pages/about/bg-hero-garden.jpg 1x, ${base}/images/pages/about/bg-hero-garden@2x.jpg 2x`}
 		/>
 		<img
-			src="{base}/images/pages/about/bg-hero.jpg"
+			src="{base}/images/pages/about/bg-hero-garden.jpg"
 			alt={'bg'}
 			class="h-full w-full object-cover"
 		/>

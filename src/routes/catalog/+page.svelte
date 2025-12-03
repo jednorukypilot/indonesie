@@ -13,7 +13,7 @@
 
 <div class="bg-base-100 flex min-h-screen w-full grow flex-col">
 	<CatalogHero />
-	<GradientBackground>
+	<GradientBackground green={true}>
 		<div
 			class="mx-4 my-20 flex w-full flex-col items-center justify-center text-center md:w-5/8"
 			id="catalog-intro"
