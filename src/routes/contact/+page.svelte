@@ -10,9 +10,9 @@
 	);
 </script>
 
-<div class="flex min-h-screen w-full flex-col items-center bg-white">
+<div class="block h-full min-h-screen w-full items-center bg-white">
 	<div
-		class="relative flex h-[1400px] min-h-screen w-full flex-col overflow-hidden sm:h-[1200px] lg:h-[1000px] xl:h-[800px]"
+		class="relative block h-[1400px] min-h-screen w-full overflow-hidden sm:h-[1200px] lg:h-[1000px] xl:h-[800px]"
 	>
 		<picture class="inline h-full w-full">
 			<source
@@ -27,11 +27,11 @@
 
 		<div class="absolute inset-0 flex items-start justify-center bg-[#212529]/82">
 			<div
-				class="flex h-full w-full max-w-[1400px] flex-col-reverse items-center
+				class="flex h-full w-full max-w-[1400px] flex-col items-center
                     justify-center gap-4 lg:flex-row lg:justify-evenly lg:pl-4 xl:w-7/8 xl:gap-12 xl:pl-0"
 			>
 				<div
-					class="flex h-full w-full flex-col justify-evenly overflow-auto p-4 text-start lg:h-min lg:w-1/2"
+					class="flex h-min w-full flex-col justify-center overflow-auto p-6 text-start sm:p-12 lg:w-1/2 lg:justify-evenly"
 				>
 					<h2 class="mb-4 font-serif text-3xl font-bold text-white md:text-5xl lg:w-4/5">
 						{#each titleParts as part}
