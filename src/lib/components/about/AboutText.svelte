@@ -10,7 +10,7 @@
 	<h2 class="mb-6 w-full font-serif text-3xl font-bold text-gray-900 md:text-4xl">
 		{#each titleParts as part}  
             {#if part.highlighted}  
-                <span class="text-primary">{part.text}</span>  
+                <span class="text-warning">{part.text}</span>  
             {:else}  
                 {part.text}  
             {/if}  

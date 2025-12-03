@@ -36,6 +36,8 @@
 		"@fortawesome/fontawesome-svg-core": "^7.1.0",
 		"@fortawesome/free-solid-svg-icons": "^7.1.0",
 		"@fortawesome/svelte-fontawesome": "^0.2.4",
-		"svelte-i18n": "^4.0.1"
+		"svelte-forms-lib": "^2.0.1",
+		"svelte-i18n": "^4.0.1",
+		"yup": "^1.7.1"
 	}
 }

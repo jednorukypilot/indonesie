@@ -40,7 +40,7 @@
 			"text": "Jsme tu pro vás od prvního dotazu až po koupi pozemku. Kontaktujte nás a udělejte první krok k vaší investici v Indonésii",
 			"button_label": "Kontaktujte nás"
 		},
-		"qna": {
+		"faq": {
 			"title": "Často se nás ptáte"
 		}
 	},
@@ -121,6 +121,74 @@
 		},
 		"faq": {
 			"title": "Čašté dotazy"
+		}
+	},
+	"contact": {
+		"title": "Napište nám krátkou zprávu a domluvte si s námi schůzku!",
+		"highlights": ["domluvte", "si", "s", "námi", "schůzku!"],
+		"text": "Investování v Indonésii vyžaduje lokální znalosti, přímé kontakty a profesionální právní proces. Proto máme vybudovanou strukturu, kterou vám rádi představíme.",
+		"form": {
+			"name_label": "Jméno a příjmení",
+			"email_label": "Email",
+			"phone_label": "Telefon",
+			"message_label": "Vaše zpráva",
+			"agree_label_p1": "Stisknutím tlačítka souhlasíte se zpracováním ",
+			"agree_label_p2": "osobních údajů.",
+			"button_label": "Odeslat zprávu",
+			"button_sending": "Odesílám...",
+			"success_message": "Zpráva byla úspěšně odeslána. Brzy se vám ozveme!",
+			"error_message": "Chyba při odesílání zprávy. Zkuste to prosím znovu.",
+			"validation": {
+				"name_required": "Jméno je povinné",
+				"name_min": "Jméno musí mít alespoň 2 znaky",
+				"name_max": "Jméno může mít maximálně 50 znaků",
+				"email_required": "Email je povinný",
+				"email_invalid": "Neplatná emailová adresa",
+				"phone_required": "Telefon je povinný",
+				"phone_invalid": "Neplatné telefonní číslo",
+				"message_required": "Zpráva je povinná",
+				"message_min": "Zpráva musí mít alespoň 10 znaků",
+				"message_max": "Zpráva může mít maximálně 1000 znaků"
+			}
+		}
+	},
+	"legal": {
+		"hero": {
+			"headline": "Bezpečný právní proces při investici do pozemku v Indonésii",
+			"highlight": ["bezpečný", "právní", "proces"],
+			"text": "Jednoduché a transparentní kroky, které zajistí právně bezpečnou investici do freehold pozemků přes vaši indonéskou firmu (PT PMA).",
+			"contact": "Domluvit schůzku"
+		},
+		"points_title": "Co dělá náš proces bezpečným?",
+		"points": [
+			{
+				"title": "Česká advokátní kancelář",
+				"points": ["kontrola smluv", "výklad", "právní ochrana"]
+			},
+			{
+				"title": "Indonéský notář",
+				"points": ["registrace freeholdu", "platnost dokumentů"]
+			},
+			{
+				"title": "Lokální právní a geodetický tým",
+				"points": ["kontrola hranic", "zónování", "dokomuentace"]
+			},
+			{
+				"title": "Freehold přes PT PMA",
+				"points": ["nejbezpečnější dlouhodobá struktura"]
+			}
+		],
+		"contact_banner": {
+			"title": "Chcete projít právní proces pro váš projekt?",
+			"title_highlights": ["projít", "právní", "proces"],
+			"text": " ",
+			"button_label": "Domluvit konzultaci"
+		},
+		"steps": {
+			"title": "Právní proces"
+		},
+		"faq": {
+			"title": "FAQ"
 		}
 	}
 }
