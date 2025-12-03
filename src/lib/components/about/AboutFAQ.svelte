@@ -20,7 +20,7 @@
 </script>
 
 <GradientBackground>
-	<div class="mx-4 my-24 flex w-full flex-col items-center justify-center" id="faq">
+	<div class="px-4 my-24 flex w-full flex-col items-center justify-center" id="faq">
 		<div class="flex flex-col items-start md:w-5/8">
 			<h2 class="mb-12 font-serif text-3xl font-bold text-gray-900 md:text-5xl">
 				{$t('about.faq.title')}
