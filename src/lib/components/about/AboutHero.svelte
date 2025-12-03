@@ -9,7 +9,9 @@
 	$: paragraphs = $t('about.hero.paragraphs');
 </script>
 
-<div class="relative w-full flex h-[1400px] flex-col overflow-hidden sm:h-[1200px] lg:h-[1000px] xl:h-[800px]">
+<div
+	class="relative flex h-[1400px] w-full flex-col overflow-hidden sm:h-[1200px] lg:h-[1000px] xl:h-[800px]"
+>
 	<picture class="inline h-full w-full">
 		<source
 			srcset={`${base}/images/pages/about/bg-hero-garden.jpg 1x, ${base}/images/pages/about/bg-hero-garden@2x.jpg 2x`}
@@ -21,7 +23,7 @@
 		/>
 	</picture>
 
-	<div class="absolute inset-0 flex cursor-pointer items-start justify-center bg-[#212529]/82">
+	<div class="absolute inset-0 flex items-start justify-center bg-[#212529]/82">
 		<div
 			class="flex h-full w-full max-w-[1400px] flex-col-reverse items-center
 				  justify-center gap-4 lg:flex-row lg:justify-evenly lg:pl-4 xl:w-7/8 xl:gap-12 xl:pl-0"
