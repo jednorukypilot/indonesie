@@ -2,28 +2,18 @@
 	import GradientBackground from '$lib/components/GradientBackground.svelte';
 	import { t } from 'svelte-i18n';
 	import type { FAQData } from '$lib/types';
-	import type { Lang } from '$lib/i18n';
-	import { DEFAULT_LANG } from '$lib/i18n';
+	import { GradientColor } from '$lib/enums';
 
-	const faqFiles = import.meta.glob('$lib/content/*/home/faq.json', {
-		eager: true,
-		import: 'default'
-	}) as Record<string, FAQData[]>;
-
-	const pathFor = (lang: Lang) => `/src/lib/content/${lang}/home/faq.json`;
-
-	export let lang: Lang = DEFAULT_LANG;
-
-	$: faqData = faqFiles[pathFor(lang)] ?? faqFiles[pathFor(DEFAULT_LANG)];
+	export let faqData: FAQData[] = [];
 
 	let open_index = -1;
 </script>
 
-<GradientBackground>
+<GradientBackground color={GradientColor.GRAY}>
 	<div class="mx-4 my-24 flex w-full flex-col items-center justify-center" id="faq">
 		<div class="flex flex-col items-start md:w-5/8">
 			<h2 class="mb-12 font-serif text-3xl font-bold text-gray-900 md:text-5xl">
-				{$t('home.faq.title')}
+				{$t('legal.faq.title')}
 			</h2>
 
 			{#if faqData && faqData.length > 0}

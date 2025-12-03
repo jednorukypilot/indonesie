@@ -1,7 +1,5 @@
 <script lang="ts">
-	import Button from '$lib/components/Button.svelte';
 	import Hero from '$lib/components/Hero.svelte';
-	import { ButtonStyle } from '$lib/enums';
 	import { highlightText } from '$lib/utils/text';
 	import { t } from 'svelte-i18n';
 

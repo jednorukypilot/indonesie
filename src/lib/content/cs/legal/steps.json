@@ -1,0 +1,212 @@
+[
+	{
+		"number": 1,
+		"title": "Výběr lokality a pozemku",
+		"data": [
+			{
+				"type": "text",
+				"content": "Vyhledáváme pozemky s nejvyšším růstovým potenciálem s ohledem na"
+			},
+			{
+				"type": "points",
+				"content": [
+					"zónování (Residential / Tourism / Commercial)",
+					"reálné transakční ceny v okolí",
+					"infrastrukturu a plánované projekty",
+					"ekonomický vývoj oblasti",
+					"bezpečnost a právní historii lokality"
+				]
+			},
+			{
+				"type": "text",
+				"content": "Po výběru pozemek předáváme do právní prověrky."
+			}
+		]
+	},
+	{
+		"number": 2,
+		"title": " Právní prověrka",
+		"data": [
+			{
+				"type": "text",
+				"content": "Při právní prověrce (due diligence) kontrolujeme:"
+			},
+			{
+				"type": "text",
+				"content": "Právní stav"
+			},
+			{
+				"type": "points",
+				"content": [
+					"vlastník pozemku (BPN/ notář)",
+					"typ certifikátu (SHM/SHGB)",
+					"historie a případné spory"
+				]
+			},
+			{
+				"type": "text",
+				"content": "Technický stav"
+			},
+			{
+				"type": "points",
+				"content": ["hranice a parcelace", "přístupové cesty (právně i fyzicky)"]
+			},
+
+			{
+				"type": "text",
+				"content": "Regulace"
+			},
+			{
+				"type": "points",
+				"content": ["zónování", "územní plán", "stavební omezení"]
+			},
+
+			{
+				"type": "text",
+				"content": "Tržní analýza"
+			},
+			{
+				"type": "points",
+				"content": ["cena vs. okolní parcely", "potenciál růstu 3–7 let"]
+			}
+		]
+	},
+	{
+		"number": 3,
+		"title": "Založení vaší indonéské firmy",
+		"data": [
+			{
+				"type": "text",
+				"content": "Nejbezpečnější forma investice je vlastnictví pozemku přes vlastní PT PMA (indonéskou firmu 100% ve vaší držbě)."
+			},
+			{
+				"type": "text",
+				"content": "Založení PT PMA zahrnuje"
+			},
+			{
+				"type": "points",
+				"content": [
+					"přípravu dokumentů",
+					"registraci v OSS",
+					"získání NIB + NPWP",
+					"nastavení firemních činností (KBLI)",
+					"zápis skutečných vlastníků",
+					"pomoc se založením účtu"
+				]
+			},
+			{
+				"type": "text",
+				"content": "Převod pozemku, který se převede na PT PMA formou freehold, notář provede registraci a zápis vlastníka."
+			},
+			{
+				"type": "text",
+				"content": "Dlouhodobě zařizujeme:"
+			},
+			{
+				"type": "points",
+				"content": [
+					"měsíční / roční účetnictví",
+					"daňové povinnosti",
+					"archivaci a firemní registrace",
+					"compliance v OSS",
+					"reporting investorovi (vývoj oblasti, změny cen, projekty)"
+				]
+			}
+		]
+	},
+	{
+		"number": 4,
+		"title": "Podpis smluv u notáře",
+		"data": [
+			{
+				"type": "text",
+				"content": "Po due diligence notář připraví"
+			},
+			{
+				"type": "points",
+				"content": [
+					"Deed of Sale & Purchase",
+					"notářský zápis",
+					"mapové přílohy",
+					"dokumenty o převodu firmy",
+					"registraci freeholdu"
+				]
+			},
+			{
+				"type": "text",
+				"content": "Podpis probíhá"
+			},
+			{
+				"type": "points",
+				"content": [
+					"u prověřeného indonéského notáře",
+					"s kontrolou české advokátní kanceláře",
+					"s naším lokálním právním týmem"
+				]
+			}
+		]
+	},
+	{
+		"number": 5,
+		"title": "Compliance",
+		"data": [
+			{
+				"type": "text",
+				"content": "Po převodu na PT PMA zajišťujeme"
+			},
+			{
+				"type": "text",
+				"content": "Účetnictví"
+			},
+			{
+				"type": "points",
+				"content": [
+					"měsíční/roční účetnictví",
+					"evidence aktiv",
+					"finanční výkazy"
+				]
+			},
+			{
+				"type": "text",
+				"content": "Daně"
+			},
+			{
+				"type": "points",
+				"content": [
+					"roční daňové přiznání",
+					"daňové registrace",
+					"výkaznictví"
+				]
+			},
+			{
+				"type": "text",
+				"content": "Compliance"
+			},
+			{
+				"type": "points",
+				"content": [
+					"aktualizace OSS",
+					"firemní agenda",
+					"archivace dokumentů"
+				]
+			},
+			{
+				"type": "text",
+				"content": "Reporting"
+			},
+			{
+				"type": "points",
+				"content": [
+					"vývoj lokality",
+					"infrastruktura",
+					"nové projekty",
+					"tržní cena pozemku"
+				]
+			},
+			{
+				"type": "text",
+				"content": "Investor tak získává full-service správu firmy po mnoho let."
+			}
+		]
+	}
+]

@@ -5,6 +5,7 @@
 	import type { PageData } from './$types';
 	import CatalogListing from '$lib/components/catalog/CatalogListing.svelte';
 	import ContactBanner from '$lib/components/ContactBanner.svelte';
+	import { GradientColor } from '$lib/enums';
 
 	export let data: PageData;
 
@@ -13,7 +14,7 @@
 
 <div class="bg-base-100 flex min-h-screen w-full grow flex-col">
 	<CatalogHero />
-	<GradientBackground green={true}>
+	<GradientBackground color={GradientColor.GREEN}>
 		<div
 			class="mx-4 my-20 flex w-full flex-col items-center justify-center text-center md:w-5/8"
 			id="catalog-intro"

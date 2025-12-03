@@ -40,7 +40,7 @@
 			"text": "Jsme tu pro vás od prvního dotazu až po koupi pozemku. Kontaktujte nás a udělejte první krok k vaší investici v Indonésii",
 			"button_label": "Kontaktujte nás"
 		},
-		"qna": {
+		"faq": {
 			"title": "Často se nás ptáte"
 		}
 	},
@@ -154,10 +154,41 @@
 	},
 	"legal": {
 		"hero": {
-			"headline": "Jak funguje bezpečný právní proces při investici do pozemku v Indonésii",
+			"headline": "Bezpečný právní proces při investici do pozemku v Indonésii",
 			"highlight": ["bezpečný", "právní", "proces"],
 			"text": "Jednoduché a transparentní kroky, které zajistí právně bezpečnou investici do freehold pozemků přes vaši indonéskou firmu (PT PMA).",
 			"contact": "Domluvit schůzku"
+		},
+		"points_title": "Co dělá náš proces bezpečným?",
+		"points": [
+			{
+				"title": "Česká advokátní kancelář",
+				"points": ["kontrola smluv", "výklad", "právní ochrana"]
+			},
+			{
+				"title": "Indonéský notář",
+				"points": ["registrace freeholdu", "platnost dokumentů"]
+			},
+			{
+				"title": "Lokální právní a geodetický tým",
+				"points": ["kontrola hranic", "zónování", "dokomuentace"]
+			},
+			{
+				"title": "Freehold přes PT PMA",
+				"points": ["nejbezpečnější dlouhodobá struktura"]
+			}
+		],
+		"contact_banner": {
+			"title": "Chcete projít právní proces pro váš projekt?",
+			"title_highlights": ["projít", "právní", "proces"],
+			"text": " ",
+			"button_label": "Domluvit konzultaci"
+		},
+		"steps": {
+			"title": "Právní proces"
+		},
+		"faq": {
+			"title": "FAQ"
 		}
 	}
 }

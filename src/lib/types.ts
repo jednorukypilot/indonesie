@@ -50,3 +50,19 @@ export type AboutPointData = {
 	description: string;
 	icon: string;
 };
+
+export type LegalPointData = {
+	title: string;
+	points: string[];
+};
+
+export type StepData = {
+	type: 'text' | 'points';
+	content: string | string[];
+};
+
+export type StepsData = {
+	number: number;
+	title: string;
+	data: StepData[];
+};

@@ -19,7 +19,7 @@
 	}
 </script>
 
-<div class="relative flex h-[1000px] flex-col overflow-hidden md:h-[800px] lg:h-[600px]">
+<div class="relative flex h-[1000px] w-full flex-col overflow-hidden md:h-[800px] lg:h-[600px]">
 	{#if !reverse}
 		<picture class="hidden h-full w-full md:inline">
 			<source
