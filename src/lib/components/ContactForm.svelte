@@ -4,7 +4,7 @@
 		formatPhoneNumber,
 		type ContactFormData
 	} from '$lib/utils/contactForm';
-	import { _ } from 'svelte-i18n';
+	import { t } from 'svelte-i18n';
 
 	// Create form instance
 	const { form, errors, state, handleChange, handleSubmit } = createContactForm();
@@ -31,7 +31,7 @@
 		try {
 			await handleSubmit(e);
 			submitSuccess = true;
-			submitMessage = $_('contact.form.success_message');
+			submitMessage = $t('contact.form.success_message');
 			// Reset form after successful submission
 			form.set({
 				name: '',
@@ -41,7 +41,7 @@
 			});
 		} catch (error) {
 			submitSuccess = false;
-			submitMessage = $_('contact.form.error_message');
+			submitMessage = $t('contact.form.error_message');
 		} finally {
 			isSubmitting = false;
 		}
@@ -57,7 +57,7 @@
 				type="text"
 				bind:value={$form.name}
 				on:input={handleChange}
-				placeholder={$_('contact.form.name_label')}
+				placeholder={$t('contact.form.name_label')}
 				class="focus:ring-primary focus:border-primary w-full rounded-md border border-gray-900 bg-gray-50 px-3 py-4 placeholder-gray-400 shadow-sm transition-colors duration-200 focus:ring-2 focus:outline-none"
 				class:border-red-300={$errors.name}
 				class:focus:ring-red-500={$errors.name}
@@ -75,7 +75,7 @@
 				type="email"
 				bind:value={$form.email}
 				on:input={handleChange}
-				placeholder={$_('contact.form.email_label')}
+				placeholder={$t('contact.form.email_label')}
 				class="focus:ring-primary focus:border-primary w-full rounded-md border border-gray-900 bg-gray-50 px-3 py-4 placeholder-gray-400 shadow-sm transition-colors duration-200 focus:ring-2 focus:outline-none"
 				class:border-red-300={$errors.email}
 				class:focus:ring-red-500={$errors.email}
@@ -93,7 +93,7 @@
 				type="tel"
 				bind:value={$form.phone}
 				on:input={handlePhoneInput}
-				placeholder={$_('contact.form.phone_label')}
+				placeholder={$t('contact.form.phone_label')}
 				class="focus:ring-primary focus:border-primary w-full rounded-md border border-gray-900 bg-gray-50 px-3 py-4 placeholder-gray-400 shadow-sm transition-colors duration-200 focus:ring-2 focus:outline-none"
 				class:border-red-300={$errors.phone}
 				class:focus:ring-red-500={$errors.phone}
@@ -111,7 +111,7 @@
 				rows="4"
 				bind:value={$form.message}
 				on:input={handleChange}
-				placeholder={$_('contact.form.message_label')}
+				placeholder={$t('contact.form.message_label')}
 				class="focus:ring-primary focus:border-primary w-full rounded-md border border-gray-900 bg-gray-50 px-3 py-4 placeholder-gray-400 shadow-sm transition-colors duration-200 focus:ring-2 focus:outline-none"
 				class:border-red-300={$errors.message}
 				class:focus:ring-red-500={$errors.message}
@@ -131,8 +131,8 @@
 				rel="noopener noreferrer"
 			>
 				<span class="inline"
-					>{$_('contact.form.agree_label_p1')}<span class="underline"
-						>{$_('contact.form.agree_label_p2')}</span
+					>{$t('contact.form.agree_label_p1')}<span class="underline"
+						>{$t('contact.form.agree_label_p2')}</span
 					></span
 				>
 			</a>
@@ -143,7 +143,7 @@
 			disabled={isSubmitting || !$state.isValid}
 			class=" border-primary bg-primary w-full border-2 px-6 py-3 font-semibold text-gray-100 hover:bg-[#1b742f]"
 		>
-			{isSubmitting ? $_('contact.form.button_sending') : $_('contact.form.button_label')}
+			{isSubmitting ? $t('contact.form.button_sending') : $t('contact.form.button_label')}
 		</button>
 
 		<!-- Submit Feedback Message -->

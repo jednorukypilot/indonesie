@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { AboutPointData } from '$lib/types';
-	import { faCircleCheck, faCheck } from '@fortawesome/free-solid-svg-icons';
+	import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 	import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
 
 	export let data: AboutPointData;
